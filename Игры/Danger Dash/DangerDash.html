@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Danger Dash</title>
+	<script type="text/javascript" src="main.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;
+		}
+
+		canvas {
+			background-image: url('https://c.wallhere.com/photos/6d/9b/pixel_art_sunset_clouds_sea_blue_pink-1828727.jpg!d');
+		}
+
+		#lose {
+			position: absolute;
+			top: 40%;
+			left: 40%;
+			border: 1px solid black;
+			opacity: 0.9;
+			font-size: 15px;
+			background-color: brown;
+			border-radius: 30px;
+			height: 100px;
+			width: 200px;
+			text-align: center;
+			padding-top: 50px;
+			display: none;
+			box-shadow: inset 20px;
+		}
+
+		.platform {
+			width: 400px;
+			height: 100px;
+			position: fixed;
+			top: 87%;
+			left: 600px;
+		}
+
+		#player {
+			position: absolute;
+			top: 500px;
+			left: 624px;
+			width: 200px;
+			transition: 0.5s all;
+		}
+
+		#point {
+			position: absolute;
+			top: 0px;
+			left: 90%;
+		}
+	</style>
+</head>
+<body style="display: block;">
+	<canvas id="cnv" style="display: block;">
+		Your brouser are not have a canvas...
+	</canvas>
+	<div id="platforms">	
+		
+	</div>
+	<img src="https://i.pinimg.com/originals/d7/b3/da/d7b3da3d4b19b7f0c44673374158df0a.gif" id="player" style="left: 624px;">
+	<div id="lose">Вы проиграли!</div>
+	<div id="point">Счет: </div>
+</body>
+</html>
